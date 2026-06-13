@@ -3,8 +3,9 @@ import json
 from config import BASE_DIR
 
 
-def read_login_data():
-    with open(BASE_DIR + '/data/login.json' ,"r",encoding="utf-8") as f:
+def read_login_data(filename):
+    # with open(BASE_DIR + '/data/login.json' ,"r",encoding="utf-8") as f:
+    with open(filename, "r", encoding="utf-8") as f:
         login_list = []
         data = json.load(f)
         for i in data:
@@ -19,4 +20,4 @@ def read_login_data():
 
 
 if __name__ == '__main__':
-    print(read_login_data())
+    print(read_login_data(BASE_DIR + '/data/login.json'))
