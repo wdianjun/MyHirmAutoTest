@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Login Test Data",
+  "description": "Array of login test case definitions",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["desc", "status_code", "success", "code", "message"],
+    "properties": {
+      "desc": {
+        "type": "string",
+        "description": "Test case description"
+      },
+      "req_data": {
+        "oneOf": [
+          { "type": "null" },
+          {
+            "type": "object",
+            "minProperties": 1
+          }
+        ]
+      },
+      "status_code": {
+        "type": "integer",
+        "minimum": 100,
+        "maximum": 599
+      },
+      "success": {
+        "type": "boolean"
+      },
+      "code": {
+        "type": "integer"
+      },
+      "message": {
+        "type": "string"
+      }
+    }
+  }
+}

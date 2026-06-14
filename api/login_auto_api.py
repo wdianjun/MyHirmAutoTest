@@ -8,6 +8,6 @@ class LoginApi:
 
 
 if __name__ == '__main__':
-  json_data = {'mobile': '13800000002', 'password': '929itheima.CN032@.20260613'}
+  json_data = {'mobile': '13800000002', 'password': '929itheima.CN032@.20260614'}
   res = LoginApi.hirm_login(json_data)
   print(res.json())
