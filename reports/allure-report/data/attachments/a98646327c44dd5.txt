@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_login_params_log.py:29 登录成功:{'success': True, 'code': 10000, 'message': '操作成功！', 'data': '673f4970-1459-4ae0-a621-12fa7a3e8d91'}
